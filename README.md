@@ -102,7 +102,7 @@ Implements §II.B (oblique block Lanczos recursion) and §III (noiseless demonst
 
 4. **One-sentence AI disclosure.** The README doesn't mention it. That's fine for a research repo — most don't. If you want to be extra thorough, add after Scope:
 
-```markdown
-## Note
+Note on Research Process
 
-The recursion, verification suite, and Eq. (24) derivation were written and checked by hand. A math faculty help as well as internet assistant was used during debugging; the Eq. (24)/Eq. (28) leading-term discrepancy was first flagged and then independently verified.
+This work was developed by the author with mathematical guidance from a faculty mentor and supplementary assistance from internet based tools during debugging and technical review. The author carried out the implementation, numerical experiments, and verification of the discrepancy between Eqs. (24) and (28).
+```markdown

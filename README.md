@@ -96,7 +96,7 @@ Implements §II.B (oblique block Lanczos recursion) and §III (noiseless demonst
 
 1. **`requirements.txt` doesn't exist yet in your repo** — create it with the four lines above, or delete that reference from the README. If you're not going to add it, remove the "Local" section entirely and keep only the Colab instructions.
 
-2. **`numpy` is imported in the notebook indirectly** (via pandas and matplotlib). You don't use `numpy` directly, so strictly it isn't a dependency. But listing it is standard since pandas pulls it in. Either include it or drop it — no functional difference.
+2. **`numpy` is imported in the notebook indirectly** (via pandas and matplotlib). We don't use `numpy` directly, so strictly it isn't a dependency. But listing it is standard since pandas pulls it in. Either include it or drop it — no functional difference.
 
 3. **`fig2_data.csv` is written to CWD, not `output/`.** That matches the code as written. If you later move it into `output/`, update the README structure tree.
 
@@ -105,4 +105,4 @@ Implements §II.B (oblique block Lanczos recursion) and §III (noiseless demonst
 ```markdown
 ## Note
 
-The recursion, verification suite, and Eq. (24) derivation were written and checked by hand. An AI assistant was used during debugging; the Eq. (24)/Eq. (28) leading-term discrepancy was first flagged by the assistant and then independently verified.
+The recursion, verification suite, and Eq. (24) derivation were written and checked by hand. A math faculty help as well as internet assistant was used during debugging; the Eq. (24)/Eq. (28) leading-term discrepancy was first flagged and then independently verified.

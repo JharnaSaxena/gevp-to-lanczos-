@@ -8,22 +8,24 @@ Block Lanczos generalizes the standard Lanczos algorithm to correlator matrices 
 
 This repository implements the oblique block Lanczos recursion and validates it on the paper's noiseless mock data, including a check of Eq. (24) whose leading term appears to be misprinted in the paper.
 
-## Repository structure
-GEVP-to-Lanczos/
-├── lanczos.ipynb # main notebook — II.B implementation, verification, Fig. 2
-├── requirements.txt
-├── README.md
-├── fig2_reproduction.png # Fig. 2 — corrected Eq. (24)
-├── fig2_eq24_printed.png # Fig. 2 style — Eq. (24) as printed
-├── fig2_eq24_corrected.png # Fig. 2 style — Eq. (24) with A₁(t+2)
-├── fig2_data.csv # Ritz table, 80 sig figs, lossless round-trip
-└── output/
-├── diagnostic.txt # per-equation trace (Eqs. 15–60)
-├── fig2_full.txt # all Ritz values per iteration
-├── higher_rank.txt # saturation, per-rank convergence, non-degeneracy
-├── ordering.txt # per-iteration ordering and bijection diagnostics
-└── ritz_values.json # structured Ritz data (100-digit strings)
+## Repository Structure
 
+```text
+GEVP-to-Lanczos/
+├── lanczos.ipynb                 # Main notebook: implementation, verification, Fig. 2
+├── requirements.txt              # Python dependencies
+├── README.md
+├── fig2_reproduction.png          # Fig. 2 reproduction using corrected Eq. (24)
+├── fig2_eq24_printed.png          # Results using Eq. (24) as printed
+├── fig2_eq24_corrected.png        # Results using corrected A₁(t+2)
+├── fig2_data.csv                  # Ritz values, 80 significant figures
+└── output/
+    ├── diagnostic.txt             # Equation-by-equation diagnostics (Eqs. 15–60)
+    ├── fig2_full.txt              # Ritz values across iterations
+    ├── higher_rank.txt             # Saturation and convergence diagnostics
+    ├── ordering.txt                # Ordering and bijection diagnostics
+    └── ritz_values.json            # Structured Ritz data (100-digit strings)
+```
  
 
 ## Notebook
@@ -101,8 +103,8 @@ Implements §II.B (oblique block Lanczos recursion) and §III (noiseless demonst
 3. **`fig2_data.csv` is written to CWD, not `output/`.** That matches the code as written. If you later move it into `output/`, update the README structure tree.
 
 4. **One-sentence AI disclosure.** The README doesn't mention it. That's fine for a research repo — most don't. If you want to be extra thorough, add after Scope:
+```markdown
 
-Note on Research Process
+## Note on Research Process
 
 This work was developed by the author with mathematical guidance from a faculty mentor and supplementary assistance from internet based tools during debugging and technical review. The author carried out the implementation, numerical experiments, and verification of the discrepancy between Eqs. (24) and (28).
-```markdown

@@ -11,7 +11,7 @@ import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-SCRIPTS = ["lanczos_core.py", "eq24_comparison.py", "figures.py"]
+SCRIPTS = ["lanczos_core.py", "eq24_comparison.py", "figures.py","write_json.py"]
 
 def main() -> int:
     for name in SCRIPTS:
